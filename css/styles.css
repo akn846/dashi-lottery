@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+html * {
+	/* Global styling for the page */
+
+	
+	/* THis is known as zeroing code that aligns behaviour in different browsers */
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	font-style: normal;
+	font-weight: 200;
+	font-family: "aglet-slab", sans-serif;
+	
+}
+
+/* Clearing the float? */
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+
+
+
+/* mobile first design */
+header {
+	padding: 20px;
+}
+
+.style-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.style-nav ul {
+	/* apply this styling to all UL elements that are members of the style-nav class */
+
+	list-style-type: none;
+	
+}
+
+/*.style-nav ul li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	color: #1E1D4A;
+}*/
+
+
+.style-nav ul li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	color: #1E1D4A;
+}
+
+
+/* unvisited link */
+.style-nav ul li a:link {
+	
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	color: #1E1D4A;
+	font-size: 16px;
+  
+}
+
+
+/* mouse over link */
+a:hover {
+		text-decoration: none;
+	text-align: center;
+	display: block;
+	text-transform: uppercase;
+	padding: 8px;
+	color:firebrick;
+	font-size: 24px;
+  
+}
+
+/* selected link */
+a:active {
+  
+}
+
+
+
+
+
+
+
+
+
+.hero h1 {
+	font-size:96px;
+	text-align: center;
+	color: ghostwhite;
+	text-transform: capitalize;
+	margin-top: 100px;
+	font-family: "Adobe Caslon Pro", serif;
+	font-weight:700;
+
+}
+
+.introduction p {
+	margin:60px;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+
+.hero {
+	background-image:url("../images/hero-image-3.jpg");
+	background-size: cover;
+	padding: 20px 20px 350px 20px;
+	text-align: center;
+	background-repeat: no-repeat;
+	
+}
+
+
+.registerButton {
+    width: 50%;
+    background-color: green;	
+}
+
+.accountButton {
+	width:50%;
+	background-color:red;
+}
+
+
+
+.buttonImages {
+		margin-top:50px;
+}
+
+.mainButton {
+	width: 48%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 2%;
+	float:left;
+	text-align: center;
+
+}
+
+
+/* Tablet view */
+@media (min-width: 768px){
+	/* This is a break point related to tablet screen size  which contains to stylees that will over ride generic style */
+	.style-nav ul li {
+		display: inline-block;
+	}
+	.style-nav ul {
+		text-align: center;
+	}
+	.hero {
+			padding: 20px 20px 350px 20px;
+	}
+}
+
+
+/* desktop view */
+@media (min-width: 1024px){
+	/* This is a break point related to tablet screen size  which contains to stylees that will over ride generic style */
+	
+	.style-logo {
+		float: left;
+		background-size: 250px 100px;
+	}
+	.style-nav {
+		float: right;
+	}
+	
+	
+	.hero {
+		background-image:url("../images/hero-image-3.jpg");
+		background-size: 1600px 700px;
+		background-position: center;
+		padding: 20px 20px 350px 20px;
+		text-align: center;
+		background-repeat: no-repeat;
+
+	}
+	
+
+		
+}
+}
+
